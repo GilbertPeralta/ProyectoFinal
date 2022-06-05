@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    tools:context=".profile">
+
+    <TextView
+        android:id="@+id/tvProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:textSize="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivUsuario"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/profile_icon"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvProfile"
+        ></ImageView>
+
+    <TextView
+        android:id="@+id/tvNombretag"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Nombre de Usuario:"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/tvNombre"
+        app:layout_constraintTop_toBottomOf="@id/ivUsuario"
+        android:layout_marginVertical="10dp"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/tvNombre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Ejemplo nombre"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toRightOf="@id/tvNombretag"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivUsuario"
+        android:layout_marginVertical="10dp"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/tvNiveltag"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Nivel de comprador:"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/tvNivel"
+        app:layout_constraintTop_toBottomOf="@id/tvNombretag"
+        android:layout_marginVertical="10dp"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/tvNivel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Ejemplo nivel"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toRightOf="@id/tvNiveltag"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvNombre"
+        android:layout_marginVertical="10dp"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/tvProductostag"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Productos en la wishlist:"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/tvProductos"
+        app:layout_constraintTop_toBottomOf="@id/tvNiveltag"
+        android:layout_marginVertical="10dp"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/tvProductos"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Ejemplo productos"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toRightOf="@id/tvProductostag"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvNivel"
+        android:layout_marginVertical="10dp"
+        ></TextView>
+
+    <Button
+        android:id="@+id/btnWishlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ver Wishlist"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvProductostag"
+        ></Button>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

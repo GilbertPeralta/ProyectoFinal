@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tvNombreProductotag"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Nombre de Producto:"
+        android:textSize="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/tvNombreProducto"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginVertical="10dp"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/tvNombreProducto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Ejemplo Producto"
+        android:textSize="15dp"
+        app:layout_constraintLeft_toRightOf="@id/tvNombreProductotag"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginVertical="10dp"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/tvPreciotag"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Precio:"
+        android:textSize="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/tvPrecio"
+        app:layout_constraintTop_toBottomOf="@id/tvNombreProductotag"
+        android:layout_marginVertical="10dp"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/tvPrecio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Ejemplo Precio"
+        android:textSize="15dp"
+        app:layout_constraintLeft_toRightOf="@id/tvPreciotag"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvNombreProducto"
+        android:layout_marginVertical="10dp"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/tvDescripciontag"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Descripcion:"
+        android:textSize="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/tvDescripcion"
+        app:layout_constraintTop_toBottomOf="@id/tvPreciotag"
+        android:layout_marginVertical="10dp"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/tvDescripcion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Ejemplo Descripcion"
+        android:textSize="15dp"
+        app:layout_constraintLeft_toRightOf="@id/tvDescripciontag"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvPrecio"
+        android:layout_marginVertical="10dp"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/tvCalificaciontag"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Calificacion:"
+        android:textSize="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/tvCalificacion"
+        app:layout_constraintTop_toBottomOf="@id/tvDescripcion"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginVertical="10dp"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/tvCalificacion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Ejemplo Calificacion"
+        android:textSize="15dp"
+        app:layout_constraintLeft_toRightOf="@id/tvCalificaciontag"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDescripciontag"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginVertical="10dp"
+        ></TextView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
